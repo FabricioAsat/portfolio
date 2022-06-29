@@ -11,9 +11,9 @@ const FooterComp = () => {
 			<span className="w-full mx-2 flex items-end justify-between my-6">
 				<div>
 					<small className="italic text-gray-300/90">Fabricio Daniel Asat - Portfolio 2022</small>
-					<small className="flex gap-2 items-center italic text-gray-300/90">
+					<small className="flex gap-2 items-center italic text-gray-300/90 lg:text-base">
 						<SiGmail />
-						fabricioasat00@gmail.com
+						fabricioasat00@gmail.com (Recommended)
 					</small>
 				</div>
 

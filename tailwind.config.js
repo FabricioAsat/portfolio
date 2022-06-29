@@ -4,6 +4,7 @@ module.exports = {
 		extend: {
 			backgroundImage: {
 				principalBackground: "url('/src/assets/background.jpg')",
+				unknownBackground: "url('/src/assets/bg-notFound.jpg')",
 			},
 		},
 	},

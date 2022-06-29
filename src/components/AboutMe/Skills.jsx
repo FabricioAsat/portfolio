@@ -1,5 +1,4 @@
 import React, { useState } from "react";
-import { Progress } from "flowbite-react";
 
 const Skills = () => {
 	const [hardtSkills, setHardSkills] = useState(true);
@@ -7,7 +6,7 @@ const Skills = () => {
 	return (
 		<div className="w-full" id="third-part">
 			<h2
-				className="subtitleSize font-bold text-center pt-20"
+				className="subtitleSize font-bold text-center lg:pt-20"
 				data-aos="fade-down"
 				data-aos-delay="150"
 				data-aos-duration="500"

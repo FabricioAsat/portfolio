@@ -18,7 +18,7 @@ const Mobile = () => {
 				}`}>
 				<GiHamburgerMenu size="30px" color="rgb(226 232 240)" onClick={handleShowModal} />
 			</div>
-			<NavBarModal showModal={showModal} />
+			<NavBarModal showModal={showModal} handleShowModal={handleShowModal} />
 		</>
 	);
 };

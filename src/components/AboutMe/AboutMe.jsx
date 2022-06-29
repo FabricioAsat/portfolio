@@ -6,7 +6,7 @@ const AboutMe = () => {
 	return (
 		<div className="flex flex-col items-center gap-y-4" id="second-part">
 			<h2
-				className="titleSize font-bold underline underline-offset-2 decoration-2 mt-20"
+				className="titleSize font-bold underline underline-offset-2 decoration-2 lg:mt-20"
 				data-aos="fade-down"
 				data-aos-delay="150"
 				data-aos-duration="300"
