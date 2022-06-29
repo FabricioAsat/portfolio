@@ -37,7 +37,7 @@ const FavoriteThings = () => {
 		<div>
 			<h2
 				className="subtitleSize font-bold text-center"
-				data-aos="fade-up"
+				data-aos="fade-down"
 				data-aos-delay="300"
 				data-aos-duration="500"
 				data-aos-easing="ease-in-out">
@@ -51,7 +51,6 @@ const FavoriteThings = () => {
 						image={thing.img}
 						title={thing.title}
 						description={thing.description}
-						anim={index % 2 === 0 ? "right" : "left"}
 						delay={String(index * 100 + 100)}
 					/>
 				))}
@@ -60,11 +59,11 @@ const FavoriteThings = () => {
 	);
 };
 
-function Card({ image, title, description, anim, delay }) {
+function Card({ image, title, description, delay }) {
 	return (
 		<div
 			className={`flex flex-col items-center backdrop-blur-sm rounded-3xl border-2 border-gray-600/20 overflow-hidden h-auto max-w-md mx-auto`}
-			data-aos={`fade-${anim}`}
+			data-aos={`fade-down`}
 			data-aos-delay={`${delay}`}
 			data-aos-duration="800"
 			data-aos-easing="ease-in-out">

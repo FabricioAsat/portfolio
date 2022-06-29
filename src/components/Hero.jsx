@@ -4,7 +4,7 @@ import hero from "../assets/hero.png";
 const Hero = () => {
 	return (
 		<div id="first-part" className="py-4">
-			<picture className="grid grid-cols-1 justify-items-center items-center gap-y-2 lg:grid-cols-2 mt-20">
+			<picture className="grid grid-cols-1 justify-items-center items-center gap-y-2 lg:grid-cols-2 lg:mt-20">
 				<img
 					src={hero}
 					alt="Me"
@@ -18,7 +18,7 @@ const Hero = () => {
 					<div>
 						<h2
 							className="font-bold text-3xl sm:text-3xl md:text-3xl lg:text-4xl xl:text-4xl 2xl:text-5xl"
-							data-aos="fade-left"
+							data-aos="fade-down"
 							data-aos-delay="500"
 							data-aos-duration="500"
 							data-aos-once="true">
@@ -26,7 +26,7 @@ const Hero = () => {
 						</h2>
 						<p
 							className="italic subtitleSize"
-							data-aos="fade-left"
+							data-aos="fade-down"
 							data-aos-delay="600"
 							data-aos-duration="500"
 							data-aos-once="true">
@@ -37,7 +37,7 @@ const Hero = () => {
 					<aside className="mt-8 mx-4 max-w-xl">
 						<h3
 							className="font-bold subtitleSize"
-							data-aos="fade-left"
+							data-aos="fade-down"
 							data-aos-delay="700"
 							data-aos-duration="500"
 							data-aos-once="true">
@@ -45,7 +45,7 @@ const Hero = () => {
 						</h3>
 						<p
 							className="italic descriptionSize"
-							data-aos="fade-left"
+							data-aos="fade-down"
 							data-aos-delay="800"
 							data-aos-duration="500"
 							data-aos-once="true">
