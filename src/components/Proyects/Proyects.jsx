@@ -36,7 +36,7 @@ const Proyects = () => {
 				setContent({
 					title: "What else?",
 					info: "Over time I will be adding future projects that I make and/or some modifications.",
-					url: "#fourth-part",
+					url: "",
 				});
 				break;
 		}
@@ -63,15 +63,17 @@ const Proyects = () => {
 						<p className="descriptionSize italic">{contents.info}</p>
 					</span>
 
-					<nav className="flex justify-end px-4 py-2">
-						<a
-							href={contents.url || "#fourth-part"}
-							className="descriptionSize button"
-							target="_blank"
-							rel="noreferrer">
-							Ver el proyecto
-						</a>
-					</nav>
+					{contents.url.length !== 0 && (
+						<nav className="flex justify-end px-4 py-2">
+							<a
+								href={contents.url || ""}
+								className="descriptionSize button"
+								target="_blank"
+								rel="noreferrer">
+								Ver el proyecto
+							</a>
+						</nav>
+					)}
 				</div>
 			</div>
 		</div>
