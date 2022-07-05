@@ -16,7 +16,7 @@ import Proyects from "./components/Proyects/Proyects";
 
 function App() {
 	useEffect(() => {
-		Aos.init({ once: true, disable: "mobile" });
+		Aos.init({ once: true });
 	}, []);
 
 	return (
