@@ -44,7 +44,7 @@ const FavoriteThings = () => {
 				About my favorite things / hobbies
 			</h2>
 
-			<div className="grid grid-cols-1 lg:grid-cols-2 gap-10 my-4 lg:mx-4">
+			<div className="grid grid-cols-1 lg:grid-cols-2 gap-10 my-4 lg:mx-4 ">
 				{things.map((thing, index) => (
 					<Card
 						key={index}
@@ -62,7 +62,7 @@ const FavoriteThings = () => {
 function Card({ image, title, description, delay }) {
 	return (
 		<div
-			className={`flex flex-col items-center backdrop-blur-sm rounded-3xl border-2 border-gray-600/20 overflow-hidden h-auto max-w-md mx-auto`}
+			className={`flex flex-col items-center rounded-3xl border-2 border-gray-600/20 overflow-hidden h-auto max-w-xs md:mx-auto mx-5`}
 			data-aos={`fade-down`}
 			data-aos-delay={`${delay}`}
 			data-aos-duration="800"

@@ -56,7 +56,7 @@ function HardSkills() {
 				<div className="flex flex-col gap-4 w-64 lg:w-80 max-w-sm">
 					<div className="max-w-xs">
 						<h2
-							className="text-center text-red-500 font-bold"
+							className="text-center text-white underline decoration-2 underline-offset-2 decoration-green-500 font-bold"
 							data-aos="fade-down"
 							data-aos-delay="300"
 							data-aos-duration="500"
@@ -77,7 +77,7 @@ function HardSkills() {
 					<div className="max-w-xs">
 						<span className="flex justify-center">
 							<h2
-								className="text-center text-blue-600 font-bold"
+								className="text-center text-white underline decoration-2 underline-offset-2 decoration-green-500 font-bold"
 								data-aos="fade-down"
 								data-aos-delay="500"
 								data-aos-duration="500"
@@ -85,7 +85,7 @@ function HardSkills() {
 								CSS &
 							</h2>
 							<h2
-								className="text-center text-cyan-500 font-bold"
+								className="text-center text-white underline decoration-2 underline-offset-2 decoration-green-500 font-bold"
 								data-aos="fade-down"
 								data-aos-delay="500"
 								data-aos-duration="500"
@@ -107,7 +107,7 @@ function HardSkills() {
 					<div className="max-w-xs">
 						<span className="flex justify-center">
 							<h2
-								className="text-center text-yellow-400 font-bold"
+								className="text-center text-white underline decoration-2 underline-offset-2 decoration-green-500 font-bold"
 								data-aos="fade-down"
 								data-aos-delay="700"
 								data-aos-duration="500"
@@ -115,7 +115,7 @@ function HardSkills() {
 								JavaScript &
 							</h2>
 							<h2
-								className="text-center text-cyan-500 font-bold"
+								className="text-center text-white underline decoration-2 underline-offset-2 decoration-green-500 font-bold"
 								data-aos="fade-down"
 								data-aos-delay="700"
 								data-aos-duration="500"
