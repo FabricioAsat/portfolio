@@ -44,7 +44,7 @@ const FavoriteThings = () => {
 				About my favorite things / hobbies
 			</h2>
 
-			<div className="grid grid-cols-1 lg:grid-cols-2 gap-10 my-4 lg:mx-4 ">
+			<div className="grid grid-cols-1 lg:grid-cols-2 gap-10 lg:gap-y-10 lg:gap-x-16 my-4 lg:mx-4 ">
 				{things.map((thing, index) => (
 					<Card
 						key={index}
@@ -70,7 +70,7 @@ function Card({ image, title, description, delay }) {
 			<img
 				src={image}
 				alt="Not Found"
-				className={`object-cover object-center h-1/2 max-h-40 w-full justify-start opacity-75`}
+				className={`object-cover object-center h-1/2 w-full justify-start opacity-75`}
 			/>
 
 			<span className={`flex flex-col h-full w-full justify-center items-center px-4`}>
