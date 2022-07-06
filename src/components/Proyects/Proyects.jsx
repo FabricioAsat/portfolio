@@ -1,11 +1,17 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 
 const Proyects = () => {
+	const [buttonActive, setbuttonActive] = useState(false);
+
 	const [contents, setContent] = useState({
-		title: "Select a Proyect",
+		title: "",
 		info: "",
 		url: "",
 	});
+
+	useEffect(() => {
+		handleChangeContent("p1");
+	}, []);
 
 	function handleChangeContent(proyect) {
 		switch (proyect) {
@@ -46,9 +52,14 @@ const Proyects = () => {
 		<div className="my-6 h-full w-full" id="fourth-part">
 			<h2 className="titleSize font-bold text-center lg:mt-20">My proyects</h2>
 
-			<div className="grid grid-cols-3 md:grid-cols-4 lg:grid-cols-5 mt-6 h-64">
+			<div className="grid grid-cols-3 md:grid-cols-4 lg:grid-cols-5 mt-6 h-64 my-4">
 				{/* Buttons */}
-				<nav className="flex flex-col max-h-96 overflow-y-auto customScroll border-r border-gray-400/30">
+				<nav
+					className="flex flex-col max-h-96 overflow-y-auto customScroll border-r border-gray-400/30"
+					data-aos="fade-down"
+					data-aos-delay="100"
+					data-aos-duration="500"
+					data-aos-easing="ease-in-out">
 					<Button handleChangeContent={handleChangeContent} value="Proyect 1" proyect="p1" />
 					<Button handleChangeContent={handleChangeContent} value="Proyect 2" proyect="p2" />
 					<Button handleChangeContent={handleChangeContent} value="Proyect 3" proyect="p3" />
@@ -59,12 +70,31 @@ const Proyects = () => {
 				<div
 					className={`col-span-2 md:col-span-3 lg:col-span-4 w-full h-full flex flex-col gap-4 justify-between overflow-y-auto customScroll md:px-8`}>
 					<span className="text-center">
-						<h2 className="subtitleSize font-bold text-green-500">{contents.title}</h2>
-						<p className="descriptionSize italic">{contents.info}</p>
+						<h2
+							className="subtitleSize font-bold text-green-500"
+							data-aos="fade-down"
+							data-aos-delay="100"
+							data-aos-duration="500"
+							data-aos-easing="ease-in-out">
+							{contents.title}
+						</h2>
+						<p
+							className="descriptionSize italic"
+							data-aos="fade-down"
+							data-aos-delay="200"
+							data-aos-duration="500"
+							data-aos-easing="ease-in-out">
+							{contents.info}
+						</p>
 					</span>
 
 					{contents.url.length !== 0 && (
-						<nav className="flex justify-end px-4 py-2">
+						<nav
+							className="flex justify-end px-4 py-2"
+							data-aos="fade-down"
+							data-aos-delay="300"
+							data-aos-duration="500"
+							data-aos-easing="ease-in-out">
 							<a
 								href={contents.url || ""}
 								className="descriptionSize button"
@@ -76,6 +106,26 @@ const Proyects = () => {
 					)}
 				</div>
 			</div>
+
+			<div className="text-center">
+				<h2
+					className="text-green-500 font-bold subtitleSize"
+					data-aos="fade-down"
+					data-aos-delay="300"
+					data-aos-duration="500"
+					data-aos-easing="ease-in-out">
+					Important
+				</h2>
+				<p
+					className="italic descriptionSize"
+					data-aos="fade-down"
+					data-aos-delay="500"
+					data-aos-duration="500"
+					data-aos-easing="ease-in-out">
+					With these projects I'm not looking to make a good design, I'm looking to practice my
+					logic as well as the "React.JS" tools I can use.
+				</p>
+			</div>
 		</div>
 	);
 };
@@ -83,7 +133,7 @@ const Proyects = () => {
 function Button({ handleChangeContent, value, proyect }) {
 	return (
 		<button
-			className="descriptionSize pt-2 pb-1 mt-1 border-b-2 border-gray-500/30 font-semibold hover:bg-black/30 hover:text-white hover:border-white"
+			className="descriptionSize pt-2 pb-1 border-b-2 border-gray-500/30 font-semibold hover:bg-black/30 hover:text-white hover:border-white"
 			onClick={() => handleChangeContent(proyect)}>
 			{value}
 		</button>

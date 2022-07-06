@@ -62,7 +62,7 @@ const FavoriteThings = () => {
 function Card({ image, title, description, delay }) {
 	return (
 		<div
-			className={`flex flex-col items-center rounded-3xl border-2 border-gray-600/20 overflow-hidden h-auto max-w-xs md:mx-auto mx-5`}
+			className={`flex flex-col items-center rounded-3xl border-2 border-gray-600/20 overflow-hidden h-auto max-w-xs md:mx-auto mx-5 bg-black/75`}
 			data-aos={`fade-down`}
 			data-aos-delay={`${delay}`}
 			data-aos-duration="800"
@@ -70,7 +70,7 @@ function Card({ image, title, description, delay }) {
 			<img
 				src={image}
 				alt="Not Found"
-				className={`object-cover object-center h-1/2 w-full justify-start opacity-75`}
+				className={`object-cover object-center h-1/2 max-h-40 w-full justify-start opacity-75`}
 			/>
 
 			<span className={`flex flex-col h-full w-full justify-center items-center px-4`}>
