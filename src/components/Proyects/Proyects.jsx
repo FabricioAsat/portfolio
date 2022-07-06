@@ -50,14 +50,21 @@ const Proyects = () => {
 
 	return (
 		<div className="my-6 h-full w-full" id="fourth-part">
-			<h2 className="titleSize font-bold text-center lg:mt-20">My proyects</h2>
+			<h2
+				className="titleSize font-bold text-center lg:mt-20"
+				data-aos="fade-down"
+				data-aos-delay="100"
+				data-aos-duration="500"
+				data-aos-easing="ease-in-out">
+				My proyects
+			</h2>
 
 			<div className="grid grid-cols-3 md:grid-cols-4 lg:grid-cols-5 mt-6 h-64 my-4">
 				{/* Buttons */}
 				<nav
 					className="flex flex-col max-h-96 overflow-y-auto customScroll border-r border-gray-400/30"
 					data-aos="fade-down"
-					data-aos-delay="100"
+					data-aos-delay="200"
 					data-aos-duration="500"
 					data-aos-easing="ease-in-out">
 					<Button handleChangeContent={handleChangeContent} value="Proyect 1" proyect="p1" />
@@ -73,7 +80,7 @@ const Proyects = () => {
 						<h2
 							className="subtitleSize font-bold text-green-500"
 							data-aos="fade-down"
-							data-aos-delay="100"
+							data-aos-delay="200"
 							data-aos-duration="500"
 							data-aos-easing="ease-in-out">
 							{contents.title}
@@ -81,7 +88,7 @@ const Proyects = () => {
 						<p
 							className="descriptionSize italic"
 							data-aos="fade-down"
-							data-aos-delay="200"
+							data-aos-delay="350"
 							data-aos-duration="500"
 							data-aos-easing="ease-in-out">
 							{contents.info}
@@ -92,7 +99,7 @@ const Proyects = () => {
 						<nav
 							className="flex justify-end px-4 py-2"
 							data-aos="fade-down"
-							data-aos-delay="300"
+							data-aos-delay="500"
 							data-aos-duration="500"
 							data-aos-easing="ease-in-out">
 							<a
