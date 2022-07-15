@@ -1,8 +1,6 @@
 import React, { useEffect, useState } from "react";
 
 const Proyects = () => {
-	const [buttonActive, setbuttonActive] = useState(false);
-
 	const [contents, setContent] = useState({
 		title: "",
 		info: "",
@@ -38,6 +36,13 @@ const Proyects = () => {
 					url: "https://p3-fabricio.netlify.app/",
 				});
 				break;
+			case "p4":
+				setContent({
+					title: "Commerce",
+					info: `Fourth project, a basic e-commerce made with NEXT.JS that uses an API to get the products and tailwind for the styles. At the same time, it incorporates the "dark/light" mode.`,
+					url: "https://p3-fabricio.netlify.app/",
+				});
+				break;
 			default:
 				setContent({
 					title: "What else?",
@@ -70,6 +75,7 @@ const Proyects = () => {
 					<Button handleChangeContent={handleChangeContent} value="Proyect 1" proyect="p1" />
 					<Button handleChangeContent={handleChangeContent} value="Proyect 2" proyect="p2" />
 					<Button handleChangeContent={handleChangeContent} value="Proyect 3" proyect="p3" />
+					<Button handleChangeContent={handleChangeContent} value="Proyect 4" proyect="p4" />
 					<Button handleChangeContent={handleChangeContent} value="..." proyect="p4" />
 				</nav>
 
@@ -107,7 +113,7 @@ const Proyects = () => {
 								className="descriptionSize button"
 								target="_blank"
 								rel="noreferrer">
-								Ver el proyecto
+								View project
 							</a>
 						</nav>
 					)}
