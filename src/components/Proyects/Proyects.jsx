@@ -40,7 +40,7 @@ const Proyects = () => {
 				setContent({
 					title: "Commerce",
 					info: `Fourth project, a basic e-commerce made with NEXT.JS that uses an API to get the products and tailwind for the styles. At the same time, it incorporates the "dark/light" mode.`,
-					url: "https://p3-fabricio.netlify.app/",
+					url: "https://4-ecommerce.vercel.app/",
 				});
 				break;
 			default:
